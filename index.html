@@ -11,6 +11,7 @@
     <button id="playButton0">いち</button>
     <button id="playButton1">に</button>
     <button id="playButton2">さん</button>
+    <button id="playButton3">よん</button>
     <script>
         const shuffleArray = (array) => {
             const cloneArray = [...array]
@@ -25,17 +26,20 @@
 
             return cloneArray
         }
-        const number = shuffleArray([0, 1, 2]);
+        const number = shuffleArray([0, 1, 2, 3]);
         const audio0 = new Audio('決定ボタンを押す1.mp3');
         const audio1 = new Audio('決定ボタンを押す2.mp3');
         const audio2 = new Audio('決定ボタンを押す3.mp3');
+        const audio3 = new Audio('決定ボタンを押す3.mp3');
         document.getElementById('playButton0').addEventListener('click', () => {
             if (number[0] == 0) {
                 audio0.play();
             } else if (number[0] == 1) {
                 audio1.play();
-            } else {
+            }else if (number[0] == 2) {
                 audio2.play();
+            }else {
+                audio3.play();
             };
         });
         document.getElementById('playButton1').addEventListener('click', () => {
@@ -43,8 +47,10 @@
                 audio0.play();
             } else if (number[1] == 1) {
                 audio1.play();
-            } else {
+            } else if (number[1] == 2) {
                 audio2.play();
+            }else {
+                audio3.play();
             };
         });
         document.getElementById('playButton2').addEventListener('click', () => {
@@ -52,8 +58,21 @@
                 audio0.play();
             } else if (number[2] == 1) {
                 audio1.play();
-            } else {
+            } else if (number[2] == 2) {
                 audio2.play();
+            }else {
+                audio3.play();
+            };
+        });
+        document.getElementById('playButton3').addEventListener('click', () => {
+            if (number[2] == 0) {
+                audio0.play();
+            } else if (number[2] == 1) {
+                audio1.play();
+            } else if (number[0] == 2) {
+                audio2.play();
+            }else {
+                audio3.play();
             };
         });
     </script>
