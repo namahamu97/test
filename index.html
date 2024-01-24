@@ -27,10 +27,10 @@
             return cloneArray
         }
         const number = shuffleArray([0, 1, 2, 3]);
-        const audio0 = new Audio('コード１.m4a');
-        const audio1 = new Audio('決定ボタンを押す2.mp3');
-        const audio2 = new Audio('決定ボタンを押す3.mp3');
-        const audio3 = new Audio('決定ボタンを押す3.mp3');
+        const audio0 = new Audio('コード１.mp3');
+        const audio1 = new Audio('コード２.mp3');
+        const audio2 = new Audio('コード３.mp3');
+        const audio3 = new Audio('コード４.mp3');
         document.getElementById('playButton0').addEventListener('click', () => {
             if (number[0] == 0) {
                 audio0.play();
