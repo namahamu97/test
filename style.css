@@ -1,0 +1,41 @@
+button {
+    display: flex;
+    margin: 10px;
+    width: 90%;
+    height: 50px;
+    justify-content: center;
+    font-size: 35px;
+    background: rgb(255, 255, 255);
+}
+
+#playButton0 {
+    border: 6px solid #ff4d4f;
+}
+
+#playButton1 {
+    border: 6px solid #ffb05c;
+}
+
+#playButton2 {
+    border: 6px solid #f9e380;
+}
+
+#playButton3 {
+    border: 6px solid #82d0d9;
+}
+
+#playButton4 {
+    border: 6px solid #4d9ee0;
+}
+
+#playButton5 {
+    border: 6px solid #aa4de0;
+}
+
+#playButton6 {
+    border: 6px solid #e04d92;
+}
+
+#playButton7 {
+    border: 4px solid #848484;
+}
