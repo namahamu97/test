@@ -8,73 +8,47 @@
 </head>
 
 <body>
-    <button id="playButton0">いち</button>
-    <button id="playButton1">に</button>
-    <button id="playButton2">さん</button>
-    <button id="playButton3">よん</button>
+    <button id="playButton0">1</button>
+    <button id="playButton1">2</button>
+    <button id="playButton2">3</button>
+    <button id="playButton3">4</button>
+    <button id="playButton4">5</button>
+    <button id="playButton5">6</button>
+    <button id="playButton6">7</button>
+    <button id="playButton7">8</button>
     <script>
-        const shuffleArray = (array) => {
-            const cloneArray = [...array]
-
-            for (let i = cloneArray.length - 1; i >= 0; i--) {
-                let rand = Math.floor(Math.random() * (i + 1))
-                // 配列の要素の順番を入れ替える
-                let tmpStorage = cloneArray[i]
-                cloneArray[i] = cloneArray[rand]
-                cloneArray[rand] = tmpStorage
-            }
-
-            return cloneArray
-        }
-        const number = shuffleArray([0, 1, 2, 3]);
-        const audio0 = new Audio('コード１.mp3');
-        const audio1 = new Audio('コード２.mp3');
-        const audio2 = new Audio('コード３.mp3');
-        const audio3 = new Audio('コード４.mp3');
+        const audio0 = new Audio('コード1.mp3');
+        const audio1 = new Audio('コード2.mp3');
+        const audio2 = new Audio('コード3.mp3');
+        const audio3 = new Audio('コード4.mp3');
+        const audio4 = new Audio('コード5.mp3');
+        const audio5 = new Audio('コード6.mp3');
+        const audio6 = new Audio('コード7.mp3');
+        const audio7 = new Audio('コード8.mp3');
         document.getElementById('playButton0').addEventListener('click', () => {
-            if (number[0] == 0) {
                 audio0.play();
-            } else if (number[0] == 1) {
+        };
+         document.getElementById('playButton1').addEventListener('click', () => {
                 audio1.play();
-            }else if (number[0] == 2) {
+        };
+         document.getElementById('playButton2').addEventListener('click', () => {
                 audio2.play();
-            }else {
+        };
+         document.getElementById('playButton3').addEventListener('click', () => {
                 audio3.play();
-            };
-        });
-        document.getElementById('playButton1').addEventListener('click', () => {
-            if (number[1] == 0) {
-                audio0.play();
-            } else if (number[1] == 1) {
-                audio1.play();
-            } else if (number[1] == 2) {
-                audio2.play();
-            }else {
-                audio3.play();
-            };
-        });
-        document.getElementById('playButton2').addEventListener('click', () => {
-            if (number[2] == 0) {
-                audio0.play();
-            } else if (number[2] == 1) {
-                audio1.play();
-            } else if (number[2] == 2) {
-                audio2.play();
-            }else {
-                audio3.play();
-            };
-        });
-        document.getElementById('playButton3').addEventListener('click', () => {
-            if (number[2] == 0) {
-                audio0.play();
-            } else if (number[2] == 1) {
-                audio1.play();
-            } else if (number[0] == 2) {
-                audio2.play();
-            }else {
-                audio3.play();
-            };
-        });
+        };
+         document.getElementById('playButton4').addEventListener('click', () => {
+                audio4.play();
+        };
+         document.getElementById('playButton5').addEventListener('click', () => {
+                audio5.play();
+        };
+         document.getElementById('playButton6').addEventListener('click', () => {
+                audio6.play();
+        };
+         document.getElementById('playButton7').addEventListener('click', () => {
+                audio7.play();
+        };
     </script>
 </body>
 
